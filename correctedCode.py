@@ -2,7 +2,7 @@ def calculator():
 
     # User calculation input
     number1 = int(input("Enter number one: "))
-    orderofoperator = input("Enter a operator (+/-/*): ")
+    operator = input("Enter a operator (+/-/*): ")
     number2 = int(input("Enter number two: "))
 
     # Calculations
@@ -14,11 +14,11 @@ def calculator():
         return number1 * number2
 
     #If-else statements to determine which operation to run based on user's operator choice
-    if orderofoperator == '-':
+    if operator == '-':
         result = subtraction()
-    elif orderofoperator == "+":
+    elif operator == "+":
         result = addition()
-    elif orderofoperator == "*":
+    elif operator == "*":
         result = multiplication()
     else:
         result = None
